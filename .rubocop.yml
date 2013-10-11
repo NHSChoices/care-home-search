@@ -1,0 +1,27 @@
+AllCops:
+  Includes:
+    - Rakefile
+    - config.ru
+  Excludes:
+    - bootstrap/**
+    - db/**
+    - config/**
+    - script/**
+    - features/**
+    - spec/**
+StringLiterals:
+  Enabled: false
+Documentation:
+  Enabled: false
+Encoding:
+  Enabled: false
+ReduceArguments:
+  Enabled: false
+AndOr:
+  Enabled: false
+LineLength:
+  Enabled: true
+  Max: 80
+# This next bit is TEMPORARY until we can get answer on snakecase params
+SymbolName:
+  Enabled: false
