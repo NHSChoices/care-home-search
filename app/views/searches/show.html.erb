@@ -1,0 +1,65 @@
+<h1><%= page_title %></h1>
+<div class="row-fluid">
+  <div class="span6">
+    <p>There are lots of things to take into account when looking for a care for an elderly person.</p>
+    <p>To find out more about care providers in your local area, search for your postcode using the form on the right.</p>
+  </div>
+  <div class="span6">
+    <%= render search %>
+  </div>
+</div>
+
+<div class="results-header clearfix">
+  <h3 class="pull-left"><%= I18n.t :results_for, scope: :heading, postcode: search.postcode %></h3>
+  <div class="pull-right">
+    <%= list_map_toggle search, params %>
+  </div>
+</div>
+
+<% if params[:map] == 'true' %>
+  <div class="map-container">
+    <% results.each do |result| %>
+      <%= map_marker result %>
+    <% end %>
+    <div id="map_canvas"></div>
+  </div>
+<% end %>
+
+<ul class="results">
+  <% results.each do |result| %>
+    <li class="result">
+      <h4>
+        <%= result.name %>
+        <small class="pull-right"><%= I18n.t(:miles, scope: :label, distance: number_with_precision(result.distance, precision: 2)) %></small>
+      </h4>
+      <span class="row-fluid">
+        <span class="span4">
+          <address>
+            <% result.address.lines.each do |line| %>
+              <%= line %><br/>
+            <% end %>
+            <%= result.address.postcode %><br />
+          </address>
+          <% result.contact.map do |contact| %>
+            <address>
+              <strong>Tel:</strong> <%= contact.phone %>
+            </address>
+          <% end %>
+        </span>
+        <span class="span8 summary">
+          <%== result.summary %>
+        </span>
+      </span>
+      <ul class="links">
+        <li>
+          <%= link_to I18n.t(:read_more, scope: :link, name: result.name) %>
+        </li>
+        <% result.website.map do |website| %>
+          <li>
+            <%= link_to I18n.t(:visit_website, scope: :link, name: result.name), website %>
+          </li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ul>

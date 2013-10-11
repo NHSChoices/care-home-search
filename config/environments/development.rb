@@ -25,3 +25,12 @@ CareHomeSearch::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 end
+
+if ENV['MOCK']
+  require 'webmock'
+  include WebMock::API
+  WebMock.disable_net_connect!(allow_localhost: true)
+  stub_request(:get, %r{http://v1\.syndication\.s\.integration\.choices\.nhs\.uk/services/types/srv0317/postcode/ERROR\.xml\?apikey=\w+&range=50}).to_return(File.read('fixtures/services.xml'))
+  stub_request(:get, %r{http://v1\.syndication\.s\.integration\.choices\.nhs\.uk/services/types/srv0317/postcode/\w+\.xml\?apikey=\w+&range=50}).to_return(File.read('fixtures/services.xml'))
+  stub_request(:get, %r{http://v1\.syndication\.s\.integration\.choices\.nhs\.uk/services/types/srv0317/\d+\.xml\?apikey=}).to_return(File.read('fixtures/service.xml'))
+end

@@ -1,0 +1,28 @@
+HTTP/1.1 500 Internal Server Error
+Cache-Control: private
+Content-Length: 736
+Content-Type: text/html
+X-AspNet-Version: 2.0.50727
+Date: Mon, 14 Oct 2013 11:48:38 GMT
+
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>NHS Choices Syndication</title>
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    
+</head>
+<body>
+    <div id="MainContent">
+        <img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/&amp;wt.js=no&amp;wt.cg_n=syndication"/>
+        
+    <h1>NHS Choices Syndication - Status Code 500</h1>
+    <h2>500 InternalServerError</h2>
+    <p>OperationResult: type=InternalServerError, statusCode=500</p>
+
+    </div>
+</body>
+</html>

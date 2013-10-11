@@ -1,0 +1,17 @@
+#global-banner {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 5px 0px;
+  background-color: #0065b7;;
+  color: #fff;
+  span {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  a { color: #fff; }
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .brand { margin: 5px 0; }
+}

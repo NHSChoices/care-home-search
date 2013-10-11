@@ -1,0 +1,17 @@
+<div id="search-form">
+  <%= form_for search, url: searches_path do |f| %>
+    <% search.errors.values.flatten.each do |error| %>
+      <div role="alert" class="alert alert-error">
+        <%= error %>
+      </div>
+    <% end %>
+    <div class="search-box">
+      <div class="search-gap"></div>
+      <div class="search-field-container control-group <%= 'error' if search.errors.any? %>">
+        <%= f.label :postcode, class: :hidden %>
+        <%= f.search_field :postcode, placeholder: I18n.t(:postcode, scope: [:placeholder, :search]), class: 'search-field' %>
+      </div>
+      <%= image_submit_tag 'mag.png', class: 'search-submit campaign-bg', alt: 'Search' %>
+    </div>
+  <% end %>
+</div>

@@ -10,7 +10,7 @@ gem 'bootstrap-sass', '~> 2.3.2.0'
 
 gem 'id'
 gem 'fendhal'
-gem 'daodalus'
+gem 'faraday'
 
 gem 'unicorn'
 gem 'capistrano', group: :development

@@ -1,0 +1,23 @@
+#map_canvas {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.map-marker {
+  display: none;
+}
+
+ul.results-view-list{
+  margin-top: 10px;
+  list-style-type:none;
+  float:right;
+  li{
+    float:left;
+    padding:0 1em;
+    border:1px solid #ccc;
+  }
+  .last{
+    border-left:none;
+  }
+}

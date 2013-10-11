@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>CareHomeSearch</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <title><%= page_title %></title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" %>
+    <%= javascript_include_tag "application" %>
+    <!--[if lt IE 9]>
+    <%= javascript_include_tag "html5shiv" %>
+    <%= stylesheet_link_tag    "if_ie", media: "all" %>
+    <![endif]-->
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
 
-<%= yield %>
+    <header id="global-banner" role="banner">
+      <div class="container">
+        <span><%= link_to image_tag('logo.png', size: '212x35', alt: 'beta.NHS.uk', class: 'brand'), root_path %></span>
+      </div>
+    </header>
 
-</body>
+    <div class="container">
+      <section role="main" id="main-content">
+        <%= yield %>
+      </section>
+    </div>
+
+  </body>
 </html>

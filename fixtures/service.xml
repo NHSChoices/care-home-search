@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Length: 3441
+Content-Type: application/xml
+X-AspNet-Version: 2.0.50727
+Date: Mon, 14 Oct 2013 10:12:02 GMT
+
+﻿<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title type="text">NHS Choices - PULSE - Leeds</title><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/401242</id><rights type="text">© Crown Copyright 2009</rights><updated>2013-10-14T11:12:01+01:00</updated><category term="Service" /><logo>http://www.nhs.uk/nhscwebservices/documents/logo1.jpg</logo><author><name>NHS Choices</name><uri>http://www.nhs.uk</uri><email>webservices@nhschoices.nhs.uk</email></author><link rel="self" type="application/xml" title="NHS Choices - PULSE - Leeds" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/401242?apikey=xxxxxx" /><link rel="alternate" title="NHS Choices - PULSE - Leeds" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232034" /><tracking xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/services%2ftypes%2fsrv0317%2f401242&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;</tracking><complete xmlns="http://purl.org/syndication/history/1.0"></complete><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/401242</id><title type="text">PULSE - Leeds</title><updated>2013-10-14T10:12:02Z</updated><link rel="self" title="PULSE - Leeds" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/401242?apikey=xxxxxx" /><link rel="alternate" title="PULSE - Leeds" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232034" /><content type="application/xml">
+                    <s:service xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+                        <s:name firstLetter="P">PULSE - Leeds</s:name>
+                        <s:type firstLetter="C">Caring for adults over 65</s:type>
+                        <s:summaryText>&amp;lt;p&amp;gt;Pulse Community Healthcare Associate provides social care and health support services to people at home and in their local community. Pulse Leeds works with a variety of organisations to provide &amp;apos;care packages&amp;apos;. These include primary care trusts, local authority and individuals controlling their own budgets. The agency provides care and support to a wide range of people including people who are elderly, people diagnosed with dementia and people with learning or physical disabilities.&amp;lt;/p&amp;gt;</s:summaryText>
+                        <s:WebAddress>www.pulsejobs.com/communityhealthcare</s:WebAddress> 
+                        <s:address><s:addressLine>5th Floor, Airedale House</s:addressLine><s:addressLine>Albion House</s:addressLine><s:addressLine>Leeds</s:addressLine><s:addressLine>West Yorkshire</s:addressLine><s:postcode>LS1 5AW</s:postcode></s:address>
+                        <s:contact type="General"><s:telephone>08454597413</s:telephone><s:faxNumber>08452579736</s:faxNumber></s:contact>
+                        <s:longitude>-1.54601299762726</s:longitude>
+                        <s:latitude>53.7978477478027</s:latitude>
+                        <s:thingsShouldKnow></s:thingsShouldKnow>
+                        
+                        
+                        
+                  </s:service>
+                </content></entry></feed>
