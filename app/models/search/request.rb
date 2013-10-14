@@ -7,11 +7,15 @@ class Search
 
     def results
       response["feed"]["entry"].map do |s|
-        Service::Request.new(s['id'], distance(s)).result
+        Provider::Request.new(id(s), distance(s)).result
       end
     end
 
     private
+
+    def id(result)
+      result['id'].split('/').last
+    end
 
     def distance(result)
       result['content']['servicesummary']['distance']

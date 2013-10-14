@@ -1,5 +1,5 @@
 CareHomeSearch::Application.routes.draw do
   resources :searches, only: [:new, :create, :show]
-  resources :care_homes
+  resources :providers, only: [:show]
   root 'searches#new'
 end

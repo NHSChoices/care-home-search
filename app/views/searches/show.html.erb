@@ -52,7 +52,7 @@
       </span>
       <ul class="links">
         <li>
-          <%= link_to I18n.t(:read_more, scope: :link, name: result.name) %>
+          <%= link_to I18n.t(:read_more, scope: :link, name: result.name), result, class: 'read-more' %>
         </li>
         <% result.website.map do |website| %>
           <li>

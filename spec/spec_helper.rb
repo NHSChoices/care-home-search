@@ -9,6 +9,10 @@ SimpleCov.start do
 end
 
 require 'id'
+require 'models/address'
+require 'models/contact'
+require 'models/care_home'
+require 'models/search/validations'
 require 'models/search'
 
 RSpec.configure do |config|
