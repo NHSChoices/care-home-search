@@ -8,6 +8,7 @@ AllCops:
     - config/**
     - script/**
     - features/**
+    - vendor/**
     - spec/**
 StringLiterals:
   Enabled: false
