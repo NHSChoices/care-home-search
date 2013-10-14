@@ -1,5 +1,9 @@
----
 services:
 - mongodb
 rvm:
 - 2.0.0
+deploy:
+  provider: heroku
+  app: care-home-search
+  api_key:
+    secure: OcELz55eaX5517PNEflUllUL2hUvVuXRM66vp43V6pbW0Ysqc5Q9vdKMDubKrm1TN6ah96UF6W7TI42Tl3JUMYor+M7kMSEJjy+cTQHYqqFlS34FjS1oy+0c5/OPAz+gjS1wmrVEJ0Zy+OsccrFjksuZRN+2WN0GSTX9BvRNTCY=

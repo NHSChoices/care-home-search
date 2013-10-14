@@ -16,6 +16,7 @@ gem 'unicorn'
 gem 'capistrano', group: :development
 
 group :development, :test, :cucumber do
+  gem 'travis'
   gem 'webmock', require: false
   gem 'rubocop'
   gem 'jslint_on_rails'
