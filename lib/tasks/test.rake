@@ -1,3 +1,9 @@
+require 'jslint/tasks'
+JSLint.config_path = ".jslint.yml"
+
+require 'coveralls/rake/task'
+Coveralls::RakeTask.new
+
 namespace :test do
   desc 'Run all tests, coverage and code quality reports'
   task :all do
