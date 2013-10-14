@@ -20,7 +20,7 @@ class MapMarker
   end
 
   def link
-    link_to result.name, '#'
+    link_to result.name, result
   end
 
   def address

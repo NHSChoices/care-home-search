@@ -1,4 +1,4 @@
-class Service
+class Provider
   include Id::Model
 
   field :id
@@ -16,6 +16,14 @@ class Service
 
   def summary
     CGI.unescapeHTML(summary_html)
+  end
+
+  def to_param
+    id
+  end
+
+  def self.model_name
+    ActiveModel::Name.new(self, nil, "Provider")
   end
 
 end

@@ -1,13 +1,13 @@
-class Service
+class Provider
   class Request
 
-    def initialize(url, distance)
-      @url = url
+    def initialize(id, distance=nil)
+      @id = id
       @distance = distance
     end
 
     def result
-      Service.new(data.merge(id: url, distance: distance))
+      Provider.new(data.merge(id: id, distance: distance))
     end
 
     private
@@ -29,6 +29,14 @@ class Service
       ENV['API_KEY']
     end
 
-    attr_reader :url, :distance
+    def domain
+      'http://v1.syndication.s.integration.choices.nhs.uk'
+    end
+
+    def url
+      "#{domain}/services/types/srv0317/#{id}"
+    end
+
+    attr_reader :id, :distance
   end
 end

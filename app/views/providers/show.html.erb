@@ -1,0 +1,23 @@
+<div class="provider">
+  <h1><%= provider.name %></h1>
+  <div class="row-fluid">
+    <div class="span6">
+      <address>
+        <% provider.address.lines.each do |line| %>
+          <%= line %><br/>
+        <% end %>
+        <%= provider.address.postcode %><br />
+      </address>
+      <% provider.contact.map do |contact| %>
+        <address>
+          <strong>Tel:</strong> <%= contact.phone %>
+        </address>
+      <% end %>
+    </div>
+    <div class="map-container span6">
+      <%= map_marker provider %>
+      <div id="map_canvas">
+      </div>
+    </div>
+  </div>
+</div>

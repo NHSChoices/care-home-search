@@ -4,6 +4,8 @@ en:
       new: "Care Home Search"
       create: "Care Home Search"
       show: "Care Home Search Results"
+    providers:
+      show: "Care provider details"
 
   heading:
     results_for: "Results for %{postcode}"
