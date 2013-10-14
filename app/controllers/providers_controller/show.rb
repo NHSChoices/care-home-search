@@ -11,4 +11,3 @@ class ProvidersController < ApplicationController
 
   end
 end
-

@@ -1,7 +1,7 @@
 class Provider
   class Request
 
-    def initialize(id, distance=nil)
+    def initialize(id, distance = nil)
       @id = id
       @distance = distance
     end

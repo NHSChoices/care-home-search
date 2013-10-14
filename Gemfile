@@ -15,7 +15,7 @@ gem 'faraday'
 gem 'unicorn'
 gem 'capistrano', group: :development
 
-group :development, :test, :cucumber do
+group :development, :test do
   gem 'travis'
   gem 'webmock', require: false
   gem 'rubocop'
