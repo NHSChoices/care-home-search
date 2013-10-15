@@ -40,14 +40,18 @@
             <% end %>
             <%= result.address.postcode %><br />
           </address>
-          <% result.contact.map do |contact| %>
             <address>
-              <strong>Tel:</strong> <%= contact.phone %>
+              <strong>Tel:</strong> <%= result.phone.value_or "No data" %>
             </address>
-          <% end %>
+            <address>
+              <strong>Web:</strong> <%= result.website.value_or "No data" %>
+            </address>
+            <address>
+              <strong>Fax:</strong> <%= result.fax.value_or "No data" %>
+            </address>
         </span>
         <span class="span8 summary">
-          <%== result.summary %>
+          <%== result.summary.value_or "" %>
         </span>
       </span>
       <ul class="links">

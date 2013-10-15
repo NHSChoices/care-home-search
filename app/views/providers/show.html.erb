@@ -6,7 +6,7 @@
         <li><%= link_to "Back to results", :back %></li>
         <% provider.website.map do |website| %>
           <li>
-            <strong>Web:</strong> <%= link_to website, website %>
+            <%= link_to website, website %>
           </li>
         <% end %>
       </ul>
@@ -16,12 +16,16 @@
         <% end %>
         <%= provider.address.postcode %><br />
       </address>
-      <% provider.contact.map do |contact| %>
-        <address>
-          <strong>Tel:</strong> <%= contact.phone %>
-        </address>
-      <% end %>
-      <%== provider.summary %>
+      <address>
+        <strong>Tel:</strong> <%= provider.phone.value_or "No data" %>
+      </address>
+      <address>
+        <strong>Web:</strong> <%= provider.website.value_or "No data" %>
+      </address>
+      <address>
+        <strong>Fax:</strong> <%= provider.fax.value_or "No data" %>
+      </address>
+      <%== provider.summary.value_or "" %>
     </div>
     <div class="map-container span6">
       <%= map_marker provider %>

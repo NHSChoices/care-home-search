@@ -2,20 +2,21 @@ class Provider
   include Id::Model
 
   field :id
-  field :name
   field :type
   field :longitude
   field :latitude
   field :distance
-  field :summary_html,           key: 'summaryText'
-  field :website,                key: 'WebAddress',       optional: true
-  field :things_you_should_know, key: 'thingsShouldKnow', optional: true
+  field :name,         key: 'deliverer'
+  field :summary_html, key: 'summaryText',  optional: true
+  field :phone,        key: 'phone',        optional: true
+  field :fax,          key: 'fax',          optional: true
+  field :website,      key: 'website',      optional: true
 
-  has_one :address, type: Address
-  has_one :contact, type: Contact, optional: true
+  has_one :address,    type: Address
+  has_one :coordinate, type: Coordinate, key: 'geographicCoordinates'
 
   def summary
-    CGI.unescapeHTML(summary_html)
+    summary_html.map(&CGI.method(:unescapeHTML))
   end
 
   def to_param
