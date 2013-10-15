@@ -1,5 +1,6 @@
 class Provider
   class Request
+    include API
 
     def initialize(id, distance = nil)
       @id = id
@@ -16,15 +17,6 @@ class Provider
       response['feed']['entry']['content']['service']
     end
 
-    def response
-      fail Search::APIError unless request.env[:status] == 200
-      Hash.from_xml(request.env[:body])
-    end
-
-    def request
-      @request ||= Faraday.get("#{url}.xml?apikey=#{api_key}")
-    end
-
     def api_key
       ENV['API_KEY']
     end
@@ -34,7 +26,7 @@ class Provider
     end
 
     def url
-      "#{domain}/services/types/srv0317/#{id}"
+      "#{domain}/services/types/srv0317/#{id}.xml?apikey=#{api_key}"
     end
 
     attr_reader :id, :distance

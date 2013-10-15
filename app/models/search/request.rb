@@ -1,5 +1,6 @@
 class Search
   class Request
+    include API
 
     def initialize(postcode)
       @postcode = postcode
@@ -19,15 +20,6 @@ class Search
 
     def distance(result)
       result['content']['servicesummary']['distance']
-    end
-
-    def response
-      fail Search::APIError unless request.env[:status] == 200
-      Hash.from_xml(request.env[:body])
-    end
-
-    def request
-      @request ||= Faraday.get(url)
     end
 
     def url
