@@ -40,18 +40,13 @@
             <% end %>
             <%= result.address.postcode %><br />
           </address>
-            <address>
-              <strong>Tel:</strong> <%= result.phone.value_or "No data" %>
-            </address>
-            <address>
-              <strong>Web:</strong> <%= result.website.value_or "No data" %>
-            </address>
-            <address>
-              <strong>Fax:</strong> <%= result.fax.value_or "No data" %>
-            </address>
         </span>
         <span class="span8 summary">
-          <%== result.summary.value_or "" %>
+            <address>
+          <strong>Web:</strong> <%= result.website.value_or "No data" %><br />
+            <strong>Tel:</strong> <%= result.phone.value_or "No data" %><br />
+        <strong>Fax:</strong> <%= result.fax.value_or "No data" %><br />
+            </address>
         </span>
       </span>
       <ul class="links">

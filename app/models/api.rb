@@ -5,7 +5,9 @@ module API
   end
 
   def response
-    fail Search::APIError.new(request.env[:body]) unless request.env[:status] == 200
+    unless request.env[:status] == 200
+      fail Search::APIError, request.env[:body].inspect
+    end
     Hash.from_xml(request.env[:body])
   end
 
