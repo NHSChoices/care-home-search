@@ -9,17 +9,6 @@
       font-size: 1em;
       text-align: justify;
     }
-    .links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-align: right;
-      li {
-        display: inline-block;
-        margin: 5px 0 5px 20px;
-        font-size: 1em;
-      }
-    }
     .summary {
       p { margin: 0; padding: 0; }
       line-height: 1.4em;
@@ -48,4 +37,16 @@
   }
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  li {
+    display: inline-block;
+    margin: 5px 0 5px 20px;
+    font-size: 1em;
+  }
 }
