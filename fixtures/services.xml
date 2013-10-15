@@ -1,88 +1,89 @@
 HTTP/1.1 200 OK
-Cache-Control: private
-Content-Length: 12937
+Content-Length: 10999
 Content-Type: application/xml
 X-AspNet-Version: 2.0.50727
-Date: Mon, 14 Oct 2013 10:13:34 GMT
+Cache-Control: private, max-age=86400
+Date: Tue, 15 Oct 2013 13:15:20 GMT
+Connection: keep-alive
 
-﻿<?xml version="1.0" encoding="utf-8"?><feed xmlns:s="http://syndication.nhschoices.nhs.uk/services" xmlns="http://www.w3.org/2005/Atom"><title type="text">NHS Choices - Caring for adults over 65 Near Postcode - LS1 - Within 50km</title><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/postcode/ls1?range=50</id><rights type="text">© Crown Copyright 2009</rights><updated>2013-10-14T11:13:34+01:00</updated><category term="Search" /><logo>http://www.nhs.uk/nhscwebservices/documents/logo1.jpg</logo><author><name>NHS Choices</name><uri>http://www.nhs.uk</uri><email>webservices@nhschoices.nhs.uk</email></author><link rel="self" type="application/xml" title="NHS Choices - Caring for adults over 65 Near Postcode - LS1 - Within 50km" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=xxxxxx&amp;range=50" /><link rel="first" type="application/xml" title="first" length="1000" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=xxxxxx&amp;range=50&amp;page=1" /><link rel="next" type="application/xml" title="next" length="1000" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=xxxxxx&amp;range=50&amp;page=2" /><link rel="last" type="application/xml" title="last" length="1000" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=xxxxxx&amp;range=50&amp;page=180" /><link rel="alternate" title="NHS Choices - Find and choose services - Caring for adults over 65" href="http://s.integration.choices.nhs.uk/Service-Search/Caring-for-adults-over-65/LocationSearch/464" /><tracking xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/services%2ftypes%2fsrv0317%2fpostcode%2fLS1&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;</tracking><s:SearchCoords /><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/401242</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="PULSE - Leeds" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/401242?apikey=xxxxxx" /><link rel="alternate" title="PULSE - Leeds" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232034" /><content type="application/xml">
+﻿<?xml version="1.0" encoding="utf-8"?><feed xmlns:s="http://syndication.nhschoices.nhs.uk/services" xmlns="http://www.w3.org/2005/Atom"><title type="text">NHS Choices - Caring for adults over 65 Near Postcode - LS1 - Within 50km</title><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/postcode/ls1?range=50</id><rights type="text">© Crown Copyright 2009</rights><updated>2013-10-15T14:15:20+01:00</updated><category term="Search" /><logo>http://www.nhs.uk/nhscwebservices/documents/logo1.jpg</logo><author><name>NHS Choices</name><uri>http://www.nhs.uk</uri><email>webservices@nhschoices.nhs.uk</email></author><link rel="self" type="application/xml" title="NHS Choices - Caring for adults over 65 Near Postcode - LS1 - Within 50km" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=xxxxxx&amp;range=50" /><link rel="first" type="application/xml" title="first" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=xxxxxx&amp;range=50&amp;page=1" /><link rel="next" type="application/xml" title="next" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=xxxxxx&amp;range=50&amp;page=2" /><link rel="last" type="application/xml" title="last" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=xxxxxx&amp;range=50&amp;page=142" /><link rel="alternate" title="NHS Choices - Find and choose services - Caring for adults over 65" href="http://www.nhs.uk/Service-Search/" /><tracking xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/services%2ftypes%2fsrv0317%2fpostcode%2fLS1&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;</tracking><s:SearchCoords /><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co153152</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="PULSE - Leeds" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co153152?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>PULSE - Leeds</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>0.414044690015807</s:distance>
+                                        <s:distance>0.412310562561766</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/399516</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="Community Support Services Central" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/399516?apikey=xxxxxx" /><link rel="alternate" title="Community Support Services Central" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232143" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co144238</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="Community Support Services Central" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co144238?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>Community Support Services Central</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>0.562733321608048</s:distance>
+                                        <s:distance>0.565685424949238</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/399496</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="Leeds Shared Lives" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/399496?apikey=xxxxxx" /><link rel="alternate" title="Leeds Shared Lives" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232142" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co150002</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="Leeds Shared Lives" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co150002?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>Leeds Shared Lives</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>0.562733321608048</s:distance>
+                                        <s:distance>0.565685424949238</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/397380</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="Leeds Federated Housing Association" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/397380?apikey=xxxxxx" /><link rel="alternate" title="Leeds Federated Housing Association" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232239" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co181155</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="Leeds Federated Housing Association" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co181155?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>Leeds Federated Housing Association</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>0.984367353766516</s:distance>
+                                        <s:distance>0.98488578017961</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/403010</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="Advantage Healthcare - Leeds" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/403010?apikey=xxxxxx" /><link rel="alternate" title="Advantage Healthcare - Leeds" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232140" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co131695</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="Advantage Healthcare - Leeds" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co131695?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>Advantage Healthcare - Leeds</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>1.03142015893497</s:distance>
+                                        <s:distance>1.0295630140987</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/403703</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="Kestrel House" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/403703?apikey=xxxxxx" /><link rel="alternate" title="Kestrel House" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232141" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co132509</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="Kestrel House" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co132509?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>Kestrel House</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>1.04439795020167</s:distance>
+                                        <s:distance>1.04403065089106</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/397686</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="St Anne's Resource Centre" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/397686?apikey=xxxxxx" /><link rel="alternate" title="St Anne's Resource Centre" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232304" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co130473</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="St Anne's Resource Centre" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co130473?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>St Anne's Resource Centre</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>1.23738499644965</s:distance>
+                                        <s:distance>1.2369316876853</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/397684</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="St Anne's Community Services - Alcohol Services" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/397684?apikey=xxxxxx" /><link rel="alternate" title="St Anne's Community Services - Alcohol Services" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232145" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co180569</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="St Anne's Community Services - Alcohol Services" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co180569?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>St Anne's Community Services - Alcohol Services</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>1.24034641705057</s:distance>
+                                        <s:distance>1.2369316876853</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/397381</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="Caremark (Leeds)" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/397381?apikey=xxxxxx" /><link rel="alternate" title="Caremark (Leeds)" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232253" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co140410</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="Caremark (Leeds)" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co140410?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>Caremark (Leeds)</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>1.31103178171646</s:distance>
+                                        <s:distance>1.31529464379659</s:distance>
                                         </s:servicesummary>
-                                        </content></entry><entry><id>http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/403713</id><title type="text"></title><updated>2013-10-14T10:13:34Z</updated><link rel="self" title="Vive UK Social Care Limited" href="http://v1.syndication.s.integration.choices.nhs.uk/services/types/srv0317/403713?apikey=xxxxxx" /><link rel="alternate" title="Vive UK Social Care Limited" href="http://s.integration.choices.nhs.uk/ServiceDirectories/Pages/GenericServiceDetails.aspx?id=232303" /><content type="application/xml">
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co136705</id><title type="text"></title><updated>2013-10-15T13:15:20Z</updated><link rel="self" title="Vive UK Social Care Limited" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/co136705?apikey=xxxxxx" /><content type="application/xml">
                                         <s:servicesummary>
-                                        <s:type code="SRV0317">Caring for adults over 65</s:type>
+                                        <s:type code="srv0317">Caring for adults over 65</s:type>
                                         <s:serviceDeliverer>
                                             <s:name>Vive UK Social Care Limited</s:name>
                                         </s:serviceDeliverer>
-                                        <s:distance>1.45710133365258</s:distance>
+                                        <s:distance>1.4560219778561</s:distance>
                                         </s:servicesummary>
                                         </content></entry></feed>

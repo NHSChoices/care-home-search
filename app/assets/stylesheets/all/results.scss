@@ -2,6 +2,17 @@
   list-style: none;
   padding: 0;
   margin: 0;
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  li {
+    display: inline-block;
+    margin: 5px 0 5px 20px;
+    font-size: 1em;
+  }
+}
   .result {
     border-bottom: 1px solid #ddd;
     margin: 20px 0;
@@ -39,14 +50,3 @@
   margin-bottom: 20px;
 }
 
-.links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: right;
-  li {
-    display: inline-block;
-    margin: 5px 0 5px 20px;
-    font-size: 1em;
-  }
-}

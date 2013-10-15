@@ -7,6 +7,8 @@ class Search
     end
 
     def results
+      Rails.logger.info "1st level keys are #{response.keys}"
+      Rails.logger.info "2nd level keys are #{response['feed'].keys}"
       response["feed"]["entry"].map do |s|
         Provider::Request.new(id(s), distance(s)).result
       end

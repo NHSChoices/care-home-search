@@ -13,10 +13,7 @@ class MapMarker
   private
 
   def data
-    {
-      latitude: result.latitude,
-      longitude: result.longitude
-    }
+    result.coordinate.data
   end
 
   def link

@@ -40,14 +40,13 @@
             <% end %>
             <%= result.address.postcode %><br />
           </address>
-          <% result.contact.map do |contact| %>
-            <address>
-              <strong>Tel:</strong> <%= contact.phone %>
-            </address>
-          <% end %>
         </span>
         <span class="span8 summary">
-          <%== result.summary %>
+            <address>
+          <strong>Web:</strong> <%= result.website.value_or "No data" %><br />
+            <strong>Tel:</strong> <%= result.phone.value_or "No data" %><br />
+        <strong>Fax:</strong> <%= result.fax.value_or "No data" %><br />
+            </address>
         </span>
       </span>
       <ul class="links">
@@ -56,7 +55,7 @@
         </li>
         <% result.website.map do |website| %>
           <li>
-            <%= link_to I18n.t(:visit_website, scope: :link, name: result.name), website %>
+            <%= link_to I18n.t(:visit_website, scope: :link, name: result.name), "http://#{website}" %>
           </li>
         <% end %>
       </ul>
