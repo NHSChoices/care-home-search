@@ -27,7 +27,7 @@ class Search
     end
 
     def domain
-      "http://v1.syndication.s.integration.choices.nhs.uk"
+      "http://v1.syndication.nhschoices.nhs.uk"
     end
 
     def action
