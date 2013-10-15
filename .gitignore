@@ -14,7 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/reports/coverage
+/coverage
 /reports/*.html
 /vendor
 .DS_Store
