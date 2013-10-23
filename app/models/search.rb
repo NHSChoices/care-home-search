@@ -24,11 +24,7 @@ class Search
   end
 
   def results
-    @results ||= Request.new(postcode).results.tap do |results|
-      results.each do |r|
-        Rails.logger.info "result is" + r.inspect
-      end
-    end
+    @results ||= Request.new(postcode).results
   end
 
 end

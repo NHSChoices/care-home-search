@@ -4,7 +4,6 @@ class SearchesController < ApplicationController
     def action
       render locals: { search: search, results: results }
     rescue Search::APIError => e
-      Rails.logger.info "Error: " + e.message
       search.errors[:base] = I18n.t(:fail_whale, scope: :error)
       render :new, locals: { search: search }
     end

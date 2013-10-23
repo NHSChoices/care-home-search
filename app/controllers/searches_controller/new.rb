@@ -6,7 +6,7 @@ class SearchesController < ApplicationController
     end
 
     def search
-      Search.new.as_form
+      Search.new
     end
 
   end

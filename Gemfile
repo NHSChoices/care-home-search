@@ -9,7 +9,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 2.3.2.0'
 
-gem 'id'
+gem 'id', github: 'rsslldnphy/id'
 gem 'fendhal'
 gem 'faraday'
 
