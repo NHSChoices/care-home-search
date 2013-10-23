@@ -27,12 +27,12 @@ The root of the Syndication API can be found at the following URL. Replace `XXXX
 
     http://v1.syndication.nhschoices.nhs.uk/?apikey=XXXX
 
-        This is what you should see:
+This is what you should see:
 
 
-        <img src="http://i.imgur.com/eJ7cv3z.png" width="100%"/>
+<img src="http://i.imgur.com/eJ7cv3z.png" width="100%"/>
 
-        Before continuing with this post, it's worth having a look around the different links to get a feel for the data that's available and how it's structured. Note, as well, the link in the top right which will give you access to the current page in a variety of different formats.
+Before continuing with this post, it's worth having a look around the different links to get a feel for the data that's available and how it's structured. Note, as well, the link in the top right which will give you access to the current page in a variety of different formats.
 
 ### Finding care homes
 
@@ -56,11 +56,11 @@ Performing a search for LS1 (Leeds city centre), we can see that the url we need
 
     http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/postcode/LS1?apikey=XXXX&range=50
 
-    Probably the best available format for our purposes is XML, which we can get by adding `.xml` before the query string, like this:
+Probably the best available format for our purposes is XML, which we can get by adding `.xml` before the query string, like this:
 
-        http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/postcode/LS1.xml?apikey=XXXX&range=50
+    http://v1.syndication.nhschoices.nhs.uk/services/types/srv0317/postcode/LS1.xml?apikey=XXXX&range=50
 
-            Now we know that, it should be easy for us to access a postcode search programmatically, substituting a user-entered postcode for `LS1`.
+Now we know that, it should be easy for us to access a postcode search programmatically, substituting a user-entered postcode for `LS1`.
 
 ### Creating an app
 
