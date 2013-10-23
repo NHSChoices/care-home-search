@@ -1,5 +1,5 @@
 <div id="search-form">
-  <%= form_for search, url: searches_path do |f| %>
+  <%= form_for search do |f| %>
     <% search.errors.values.flatten.each do |error| %>
       <div role="alert" class="alert alert-error">
         <%= error %>

@@ -3,7 +3,7 @@ class SearchesController < ApplicationController
 
     def action
       render locals: { search: search, results: results }
-    rescue Search::APIError => e
+    rescue Search::APIError
       search.errors[:base] = I18n.t(:fail_whale, scope: :error)
       render :new, locals: { search: search }
     end

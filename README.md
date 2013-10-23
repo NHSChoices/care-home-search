@@ -8,6 +8,15 @@
 
 As well as allowing users to search for care homes in their local area, this application is intended to act as an example use of NHS Choices syndication data.
 
+To download and run:
+
+    git clone https://github.com/NHSChoices/care-home-search.git
+    cd care-home-search
+    bundle install
+    bundle exec unicorn
+
+Now visit `http://localhost:8080` in your browser.
+
 # Using NHS Choices Syndication Data
 ##An Example App
 
